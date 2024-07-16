@@ -1,0 +1,100 @@
+{
+  "menu": [
+    {
+      "name": "Dashboards",
+      "url": "dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard"
+    },
+    {
+      "name": "Users",
+      "icon": "menu-icon tf-icons bx bx-user",
+      "url": "app/user/list",
+      "slug": "app-user-list"
+    },
+    {
+      "name": "Blocked Users",
+      "icon": "menu-icon tf-icons bx bx-block",
+      "url": "block-list",
+      "slug": "block-list"
+    },
+    {
+      "name": "Suspended Users",
+      "icon": "menu-icon tf-icons bx bx-user-x",
+      "url": "suspend-list",
+      "slug": "suspend-list"
+    },
+    {
+      "name": "Group",
+      "icon": "menu-icon tf-icons bx bx-group",
+      "url": "groups-list",
+      "slug": "groups-list"
+    },
+    {
+      "name": "Wallpapers",
+      "icon": "menu-icon tf-icons bx bx-desktop",
+      "slug": "wallpapers-list",
+      "submenu": [
+        {
+          "url": "wallpapers-add",
+          "name": "Add Wallpaper",
+          "slug": "wallpapers-add"
+        },
+        {
+          "url": "wallpapers-list",
+          "name": "Wallpaper List",
+          "slug": "wallpapers-list"
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "icon": "menu-icon tf-icons bx bx-bell",
+      "slug": "notifications-list",
+      "submenu": [
+        {
+          "url": "notifications-add",
+          "name": "Push Notification",
+          "slug": "notifications-add"
+        },
+        {
+          "url": "notifications-list",
+          "name": "View Notification",
+          "slug": "notifications-list"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "'appsetting-add",
+      "submenu": [
+        {
+          "url": "appsetting-add",
+          "name": "App Settings",
+          "slug": "appsetting-add"
+        },
+        {
+          "url": "agorakey-add",
+          "name": "Agora Key",
+          "slug": "agorakey-add"
+        },
+        {
+          "url": "groupsetting-add",
+          "name": "Group Settings",
+          "slug": "groupsetting-add"
+        },
+        {
+          "url": "privacypolicy-add",
+          "name": "Privacy Policy",
+          "slug": "privacypolicy-add"
+        },
+        {
+          "url": "termcondition-add",
+          "name": "Terms & Conditions",
+          "slug": "termcondition-add"
+        }
+      ]
+    }
+  ]
+}

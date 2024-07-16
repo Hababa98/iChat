@@ -1,0 +1,72 @@
+[debug] [2024-07-12T11:58:57.951Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T11:58:57.957Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-07-12T11:58:57.957Z] CLI Version:   13.13.1
+[debug] [2024-07-12T11:58:57.957Z] Platform:      darwin
+[debug] [2024-07-12T11:58:57.957Z] Node Version:  v20.14.0
+[debug] [2024-07-12T11:58:57.957Z] Time:          Fri Jul 12 2024 14:58:57 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-07-12T11:58:57.957Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T11:58:57.959Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-07-12T11:58:58.024Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T11:58:58.024Z] > authorizing via signed-in user (ahmad.hababa@students.alquds.edu)
+[debug] [2024-07-12T11:58:58.024Z] [iam] checking project ichat-272a9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-12T11:58:58.025Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions [none]
+[debug] [2024-07-12T11:58:58.025Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions x-goog-quota-user=projects/ichat-272a9
+[debug] [2024-07-12T11:58:58.025Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-12T11:59:00.060Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-07-12T11:59:00.060Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-07-12T11:59:00.800Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions 401
+[debug] [2024-07-12T11:59:00.800Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2024-07-12T11:59:00.802Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-07-12T11:59:00.803Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 [none]
+[debug] [2024-07-12T11:59:01.271Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 401
+[debug] [2024-07-12T11:59:01.272Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-07-12T11:59:01.272Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-07-12T12:09:28.848Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T12:09:28.855Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-07-12T12:09:28.855Z] CLI Version:   13.13.1
+[debug] [2024-07-12T12:09:28.856Z] Platform:      darwin
+[debug] [2024-07-12T12:09:28.856Z] Node Version:  v20.14.0
+[debug] [2024-07-12T12:09:28.856Z] Time:          Fri Jul 12 2024 15:09:28 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-07-12T12:09:28.856Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T12:09:28.896Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T12:09:28.896Z] > authorizing via signed-in user (ahmad.hababa@students.alquds.edu)
+[debug] [2024-07-12T12:09:28.897Z] [iam] checking project ichat-272a9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-12T12:09:28.900Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions [none]
+[debug] [2024-07-12T12:09:28.901Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions x-goog-quota-user=projects/ichat-272a9
+[debug] [2024-07-12T12:09:28.901Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-12T12:09:48.677Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions 401
+[debug] [2024-07-12T12:09:48.678Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-07-12T12:09:48.679Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-07-12T12:09:48.681Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 [none]
+[debug] [2024-07-12T12:10:02.875Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 401
+[debug] [2024-07-12T12:10:02.875Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-07-12T12:10:02.876Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-07-12T12:10:34.288Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T12:10:34.290Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-07-12T12:10:34.290Z] CLI Version:   13.13.1
+[debug] [2024-07-12T12:10:34.290Z] Platform:      darwin
+[debug] [2024-07-12T12:10:34.290Z] Node Version:  v20.14.0
+[debug] [2024-07-12T12:10:34.290Z] Time:          Fri Jul 12 2024 15:10:34 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-07-12T12:10:34.290Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T12:10:34.326Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T12:10:34.326Z] > authorizing via signed-in user (ahmad.hababa@students.alquds.edu)
+[debug] [2024-07-12T12:10:34.326Z] [iam] checking project ichat-272a9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-12T12:10:34.327Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions [none]
+[debug] [2024-07-12T12:10:34.327Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions x-goog-quota-user=projects/ichat-272a9
+[debug] [2024-07-12T12:10:34.327Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-12T12:10:35.856Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions 401
+[debug] [2024-07-12T12:10:35.857Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ichat-272a9:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-07-12T12:10:35.858Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-07-12T12:10:35.859Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 [none]
+[debug] [2024-07-12T12:10:36.933Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 401
+[debug] [2024-07-12T12:10:36.933Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ichat-272a9 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-07-12T12:10:36.934Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier

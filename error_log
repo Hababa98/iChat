@@ -1,0 +1,2 @@
+[20-Oct-2023 09:35:34 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Api\UserAuthController::removeAddress() in /home1/aljamqht/app.aljameelat.com/app/Http/Controllers/Api/UserAuthController.php on line 2478
+[16-Jan-2024 01:33:19 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.30. in /home2/primoiyq/ecommerce.theprimoapp.com/vendor/composer/platform_check.php on line 24
